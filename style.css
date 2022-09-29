@@ -1,182 +1,185 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
 }
-    .banner{
-        width: 100%;
-        height: fill;
-        background-image: url();
-        background-size:contain;
-        background-position: center;
-        background-color:white;
-        
-        
-    }   
-    .navbar{
-        width: 100%;
-        margin: auto;
-        padding: 35px 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color:papayawhip;
-        
-    }
-    .logo{
-        width: 75px;
-        height: 75px;
-        cursor: pointer;
-        
-    }
-    .navbar ul li{
-        list-style: n;
-        display: inline-block;
-        margin: 0 20px;
-        position: relative;
-    }
-    .navbar ul li a{
-        text-decoration: none;
-        color:black;
-        text-transform: uppercase;
-        font-weight: bold;
-        
-        
-    }
-    .navbar ul li::after{
-        content: "";
-        height: 3px;
-        width: 0;
-        background: dodgerblue;
-        position: absolute;
-        left: 0;
-        bottom: -10;
-        transition: 0.5s;
+.banner {
+  width: 100%;
+  height: fill;
+  background-image: url();
+  background-size: contain;
+  background-position: center;
+  background-color: white;
+}
+.navbar {
+  width: 100%;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: papayawhip;
+}
+.logo {
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.logo-img {
+  width: 75px;
+}
+.navbar ul li {
+  list-style: n;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: rgb(162, 194, 227);
+  position: absolute;
+  left: 0;
+  bottom: -10;
+  transition: 0.5s;
+}
+.navbar ul li:hover:after {
+  width: 100%;
+}
+.content {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+  padding: 0 20px;
+}
+.content h1 {
+  font-size: 70px;
+  margin-top: 100px;
+  font-style: italic;
+}
+.content p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 30px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid black;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background: rgb(162, 194, 227);
+}
+span {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+button:hover span {
+  width: 100%;
+}
+button:hover {
+  border: none;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+.hadle {
+  width: 100%;
+  padding: absolute;
+  top: 50%;
+  transform: translateY(100%);
+  color: black;
+}
+.menus {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-column {
+  width: 50%;
+}
+.menu-column h4 {
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
 
-    }
-    .navbar ul li:hover:after{
-        width: 100%;
+.single-menu {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.single-menu img {
+  border-radius: 50%;
+  border: 1px dashed #ddd;
+  padding: 3px;
+  margin-right: 15px;
+}
+.single-menu .menu-content h5 {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 1px dashed #222;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.kontakt {
+  position: fixed;
+}
+.navn {
+  font-size: 30;
+  flex: 1;
+  margin-left: 20px;
+}
 
-    }
-    .content{
-        width: 100%;
-        padding: absolute;
-        top: 100%;
-        transform: translateY(-10%);
-        text-align: center;
-        color: black;
-    
-      
-    }
-    .content h1{
-        font-size: 70px;
-        margin-top: 250;
-        
-    }
-    .content p{
-        margin: 20px auto;
-        font-weight: 100;
-        line-height: 25px;
-    }
-    button{
-        width: 200px;
-        padding: 15px 0;
-        text-align: center;
-        margin: 30px 20px;
-        border-radius: 25px;
-        font-weight: bold;
-        border: 2px solid black;
-        background: transparent;
-        color: black;
-        cursor: pointer;
-        position: relative;
-        overflow: hidden;
-    }
-    span{
-        background: dodgerblue;
-        height: 100%;
-        width: 100%;
-        border-radius: 25px;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        z-index: -1;
-        transition: 0.5s;
-    }
-    button:hover span{
-        width: 100%;
+footer {
+  width: 100%;
+  padding: 50px;
+  background: #342F29;
+  min-height: 300px;
+  margin-top: 100px;
+  color: #eee;
+  text-align: center;
+}
 
-    }
-    button:hover{
-        border: none;
+footer > div {
+  display: flex;
+  width: 600px;
+  margin: 0 auto;
+}
 
-    }
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 20%;
-      }
-      .hadle{
-        width: 100%;
-        padding: absolute;
-        top: 50%;
-        transform: translateY(100%);
-        color: black;
-      }
-      .menus{
-        margin-top: 650px;
-        transform: translateY(-75%);
-        display:flex;
-        justify-content: space-between
-        
-      }
-      .menu-column{
-        width: 50%;
-
-      }
-      .menu-column h4{
-        text-transform: capitalize;
-        font-size: 25px;
-        font-weight: 500;
-        margin-bottom: 20px;
-        position: relative;
-        padding-bottom: 10px;
-        
-        
-      }
-      
-      .menu-column h4:before{
-        content: "";
-        position: absolute;
-        width: 40px;
-        height: 2px;
-        background-color: dodgerblue;
-        bottom: 0;
-      }
-      .single-menu{
-        display: flex;
-        align-items: center;
-        margin-top: 40px;
-        
-      }
-      .single-menu img{
-        border-radius: 50%;
-        border: 1px dashed #ddd;
-        padding: 3px;
-        margin-right: 15px;
-      }
-      .single-menu .menu-content h5{
-        text-transform: capitalize;
-        font-size: 20px;
-        font-weight: 500;
-        border-bottom: 1px dashed #222;
-        padding-bottom: 5px;
-        margin-bottom: 10px;
-      }
-      .kontakt{
-       position:fixed;
-      }
-  
+.footer-content {
+  width: 300px;
+  margin: 10px;
+  text-align: left;
+  color: #ccc;
+}
